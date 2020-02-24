@@ -1,10 +1,349 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
+
+
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <title>RGU Campus Map</title>
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Hind:400,300|Bangers' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href=assets/CSS/unsemantic-grid-responsive-tablet.css>
+
+
+
 </head>
+
+
+
+
+
 <body>
 
+
+
+<!--INTERFACE-->
+
+
+
+<!-- HEADER START -->
+
+<header>
+
+    <img src="assets/images/rgulogo.jpg" alt="RGU Logo" id="rgulogo">
+
+    <img src="assets/images/campusmaplogo.jpg"  alt="Campus Map" id="campusmaplogo">
+
+
+
+    <!--SEARCH BAR-->
+
+    <div id="searchbox">
+
+        <form>
+
+            <input type="text" name="search" placeholder="Search RGU Maps" maxlength="2000">
+
+            <input type="submit" value="Go">
+
+            <input type="button" value="Browse" class=" ">
+
+        </form>
+
+
+
+    </div>
+
+
+
+    <!--SEARCH BAR END-->
+
+
+
+    <!--NAVIGATION START-->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#"> Help </a> </li>
+
+            <li><a href="#"> Feedback </a> </li>
+
+            <li><a href="#"> Email </a> </li>
+
+            <li><a href="#"> Link </a> </li>
+
+            <li><a href="#"> Embed </a> </li>
+
+            <li><a href="#"> Print </a> </li>
+
+            <li><a href="https://www.firstgroup.com/aberdeen"> Bus Times </a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!--NAVIGATION END-->
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+<!--MAIN START-->
+
+<main class="grid-container">
+
+
+
+    <!--MAIN SECTION START-->
+
+    <section class="grid-66">
+
+
+
+        <!--GOOGLE MAPS START-->
+
+
+
+
+
+        <!--GOOGLE MAPS TRIAL 2-->
+
+
+
+        <div id="map"></div>
+
+
+
+        <script>
+
+            function initMap() {
+
+                var location = {lat: 57.119206, lng: -2.136063};
+
+                var map = new google.maps.Map(document.getElementById("map"), {
+
+                    zoom: 16,
+
+                    center: location
+
+                });
+
+
+
+                var marker= new google.maps.Marker ({
+
+                    position: location,
+
+                    map: map
+
+
+
+                });
+
+            }
+
+        </script>
+
+
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAgCU8Eq0w2ezRGNWFag9sNnGtEe-bD5Sc&callback=initMap">
+
+        </script>
+
+        <!--GOOGLE MAPS TRIAL 2 END-->
+
+
+
+        <!--GOOGLE MAPS END-->
+
+
+
+
+
+        <!-- MAIN SECTION END-->
+
+    </section>
+
+
+
+
+
+    <!--SIDEBAR START-->
+
+    <aside class="grid-33">
+
+
+
+        <!--INSTRUCTION START-->
+
+
+
+        <section>
+
+            <h4> Hi! Welcome to the RGU Campus Map</h4>
+
+            <p>
+
+                Not sure of how to find your lecture rooms?
+
+                Finding your way around school made easy.
+
+            </p>
+
+            <p>Map Instructions:</p>
+
+            <ul>
+
+                <li>Click on the <b>search</b> and search for rooms <img src="assets/images/searchinfo.jpg" alt="Search instruction"></li>
+
+                <li>Click on the <b>Browse</b> button and view categories <img src="assets/images/Browse.jpg" alt="Browse instruction"></li>
+
+                <li>Click on <b>markers</b> to display more information about the specific location <img src="assets/images/markerinfo.jpg" alt="Marker Instruction"></li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!--INSTRUCTION END-->
+
+
+
+        <!--SAMPLE SEARCHES START-->
+
+        <section>
+
+            <h4>Sample searches:</h4>
+
+
+
+            <li><b>Search the map</b></li>
+
+
+
+            <ul>
+
+                <li><a href="#"> Bus Stop </a></li>
+
+                <li><a href="#"> Main Eating Area </a></li>
+
+                <li><a href="#"> Medical Center </a></li>
+
+                <li><a href="#"> RGU Union </a></li>
+
+
+
+
+
+            </ul>
+
+
+
+            <li> <b>Locate buildings</b>
+
+
+
+                <ul>
+
+
+
+                    <li><a href="#"> The Sir Ian Wood Building </a></li>
+
+                    <li><a href="#"> The Ishbel Gordon Building </a></li>
+
+                    <li><a href="#"> Aberdeen Buisness School </a></li>
+
+                    <li><a href="#"> Gray's School of Art </a></li>
+
+
+
+                </ul>
+
+
+
+
+
+        </section>
+
+
+
+        <!--SAMPLE SEARCHES ENDS-->
+
+
+
+    </aside>
+
+
+
+    <!--SIDEBAR ENDS-->
+
+
+
+    <!--BUS TIMES-->
+
+    <div>
+
+        <ul>
+
+            <li><a href="https://www.firstgroup.com/aberdeen"> Bus Times </a></li>
+
+
+
+        </ul>
+
+
+
+        <button type="button">Bus Times </button>
+
+
+
+        <!--BUS END-->
+
+
+
+    </div>
+
+
+
+    <div id="svcontrols">
+
+        <div id="svclose" title="Exit Street View"> </div>
+
+        <div id="svzoomin"></div>
+
+        <div id="svzoomout"></div>
+
+    </div>
+
+</main>
+
+<!--MAIN END-->
+
+<footer>
+
+
+
+</footer>
+
 </body>
+
 </html>
