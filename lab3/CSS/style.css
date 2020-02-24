@@ -36,7 +36,6 @@ li a:hover {
     width: 960px;
     height: 200px;
 }
-
 #hos
 {
     width: 200px;
@@ -52,19 +51,16 @@ p, h2, h3, h4, h5, a{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
-
 h3, h4, h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-
 #hos
 {
     width: 200px;
     float: left;
     padding-right: 10px;
 }
-
 /* MARGIN FIXES */
 aside p,h3,h4{
     margin: 0;
@@ -79,7 +75,6 @@ aside p{
     padding-left: 10px;
     padding-right: 10px;
 }
-
 /* MARGIN FIXES */
 aside p,h3,h4{
     margin: 0;
@@ -89,13 +84,11 @@ aside h3{
     padding-left: 10px;
     padding-right: 10px;
 }
-
 aside h4{
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
-
 aside p{
     padding-bottom: 20px;
     padding-left: 10px;
@@ -126,6 +119,19 @@ p {
 a {
     font-size: 13px;
 }
+/* COLOURINGS */
+article{
+    background-color: #DBC9DF;
+}
+article{
+    background-color: #782A7E;
+}
+footer{
+    background-color: #363636;
+}
+aside p,h3,h4{
+    color: white;
+}
 footer>p{
     width: 150px;
     margin-left: auto;
@@ -133,13 +139,3 @@ footer>p{
     color: white;
 }
 
-/* COLOURINGS */
-news{
-    background-color: #DBC9DF;
-}
-events{
-    background-color: #782A7E;
-}
-footer{
-    background-color: #363636;
-}
